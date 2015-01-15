@@ -55,7 +55,7 @@ The width and height of the rectangle.
 
 * Example
 ``` ruby
-"actions" => {"crop"=>{"x" => 0, "y"=> 0, "width" => 100, "height" => 100}
+"actions" => {"crop"=>{"x" => 0, "y"=> 0, "width" => 100, "height" => 100}}
 ```
 
 #### resize_by_scale(scale : float)
