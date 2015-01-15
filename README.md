@@ -9,7 +9,11 @@ WEBOMAGICK
 
 ________________________________________________________________________________
 
-Actions:
+### Usage
+
+``` ruby
+require 'webimagick'
+```
 
 thumbnail(width : int)
 Resize the image according to  width
