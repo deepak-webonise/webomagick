@@ -12,7 +12,7 @@ ________________________________________________________________________________
 ### Usage
 
 ``` ruby
-require 'webimagick'
+require 'webomagick'
 param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.google.com/images/srpr/logo11w.png","result" => "/home/deepak/test/test.png"}
 Webomagick.image_process(param)
 ```
