@@ -13,12 +13,16 @@ ________________________________________________________________________________
 
 ``` ruby
 require 'webimagick'
+param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.google.com/images/srpr/logo11w.png","result" => "/home/deepak/test/test.png"}
+Webomagick.image_process(param)
 ```
+### Documentation
+* Methods to call
 
-thumbnail(width : int)
+###thumbnail(width : int)
 Resize the image according to  width
 
-Example
+*Example
 "actions" => {"thumbnail"=>50}
 
 rotate(degrees : int)
@@ -62,4 +66,4 @@ Note: Not work for PNG and GIF images
 #Example :
 #param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.google.com/images/srpr/logo11w.png","result" => "/home/deepak/test/test.png"}
 
-#Webomagick.image_process(param)
+#
