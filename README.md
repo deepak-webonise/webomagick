@@ -1,33 +1,35 @@
-Created Basic Gem For Image Processin
+WEBOMAGICK
 ================================================
-# Dependency:
-# Imagemagick Delegates
-# Imagemagick Library
-# RMagick Gem
-#
-#Supports JPG, PNG and GIF formats
-#
-# Actions:
-#
-#thumbnail(width : int)
-#Resize the image according to  width
-#
-#Example
-#"actions" => {"thumbnail"=>50}
-#
-#rotate(degrees : int)
-#rotate the image according degrees 
-#
-#Example:
-#"actions" => {"rotate"=>50}
-#
-#resize_by_resolution(resolution :int)
-#Resize the image according to resolution
-#
-#Example
-#"actions" => {"resize_by_resolution"=>50}
-#
-#Note: Not work for PNG and GIF images 
+### Basic gem for image processing.
+-------------------------------------
+## Dependency:
+ Imagemagick Delegates
+ Imagemagick Library
+ RMagick Gem
+
+Supports JPG, PNG and GIF formats
+
+Actions:
+
+thumbnail(width : int)
+Resize the image according to  width
+
+Example
+"actions" => {"thumbnail"=>50}
+
+rotate(degrees : int)
+rotate the image according degrees 
+
+Example:
+"actions" => {"rotate"=>50}
+
+resize_by_resolution(resolution :int)
+Resize the image according to resolution
+
+Example
+"actions" => {"resize_by_resolution"=>50}
+
+Note: Not work for PNG and GIF images 
 
 
 #crop(x :int, y: int, width : int, height : int)
