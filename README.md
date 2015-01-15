@@ -3,9 +3,9 @@ WEBOMAGICK
 ### Basic gem for image processing.
 -------------------------------------
 ### Dependency:
-Imagemagick Delegates
-Imagemagick Library
-RMagick Gem
+* Imagemagick Delegates
+* Imagemagick Library
+* RMagick Gem
 
 Supports JPG, PNG and GIF formats
 
