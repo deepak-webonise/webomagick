@@ -1,6 +1,11 @@
 WEBOMAGICK
 ================================================
-### Basic gem for image processing.
+Webomagick is a gem used for image processing.Webomagick uses Imagemagick and RMagick wrapper for  for manipulating images.Webomagick provides basic functionalities related to images:
+*Thumbnail
+*Resolution
+*Crop
+*Rotate
+*Scale
 -------------------------------------
 ### Dependency:
 * [Imagemagick Delegates](http://www.imagemagick.org/download/delegates/)
@@ -8,18 +13,26 @@ WEBOMAGICK
 * [RMagick Gem](https://github.com/rmagick/rmagick)
 
 ________________________________________________________________________________
-
-### Usage
+### Installation:
+```shell
+(sudo)gem install webomagick
+```
+___________________________________
+### Supported formats:
+------------
+|Extensions|
+------------
+|.png      |
+|.jpg/jpeg |
+|.gif      |
+___________________________________
+### Usage:
+Require the gem
 
 ``` ruby
 require 'webomagick'
-param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.google.com/images/srpr/logo11w.png","result" => "/home/deepak/test/test.png"}
-Webomagick.image_process(param)
 ```
-_____________________________________________________________________________
-### Documentation
-
-###Actions
+____________________________________________________________________________
 
 #### thumbnail(width : int)
 Resize the image according to  width
@@ -44,14 +57,13 @@ Resize the image according to resolution
 ``` ruby
 "actions" => {"resize_by_resolution"=>50}
 ```
-Note: Not work for PNG and GIF images 
-
+Note:resize_by_resolution not works for png and gif images.
 
 #### crop(x :int, y: int, width : int, height : int)
  The parameters are 
-* The x- and y-offset of the rectangle relative to the upper-left corner of the image
-* width, height
-The width and height of the rectangle.
+* The x-offset and y-offset of the rectangle relative to the upper-left corner of the image.
+* width, height:
+  The width and height of the rectangle.
 
 * Example
 ``` ruby
@@ -67,3 +79,13 @@ Resize the image according to percentage.
 ``` ruby
 "actions" => {"resize_by_scale"=>1.25}
 ```
+*Example for manipulating an image
+____________________________________________________________________________
+```ruby
+param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.google.com/images/srpr/logo11w.png","result" => "/home/deepak/test/test.png"}
+Webomagick.image_process(param)
+```
+image_process method takes param as argument.
+param contains hash of actions for manipulating images. 
+source_url contains url from which images should be taken for processing.
+result provides the location for storing manipulated image.
