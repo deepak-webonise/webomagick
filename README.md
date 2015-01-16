@@ -1,11 +1,11 @@
 WEBOMAGICK
 ================================================
 Webomagick is a gem used for image processing.Webomagick uses Imagemagick and RMagick wrapper for  for manipulating images.Webomagick provides basic functionalities related to images:
-*Thumbnail
-*Resolution
-*Crop
-*Rotate
-*Scale
+* Thumbnail
+* Resolution
+* Crop
+* Rotate
+* Scale
 -------------------------------------
 ### Dependency:
 * [Imagemagick Delegates](http://www.imagemagick.org/download/delegates/)
