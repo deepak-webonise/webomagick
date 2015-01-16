@@ -87,6 +87,6 @@ param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.goo
 Webomagick.image_process(param)
 ```
 image_process method takes param as argument.
-* "param" contains hash of actions for manipulating images. 
-* "source_url" contains url from which images should be taken for processing.
-* "result" provides the location for storing manipulated image.
+* "param" : contains hash of actions for manipulating images. 
+* "source_url" : contains url from which images should be taken for processing.
+* "result" : provides the location for storing manipulated image.
