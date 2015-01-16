@@ -1,19 +1,20 @@
 WEBOMAGICK
 ================================================
-Webomagick is a gem used for image processing.Webomagick uses Imagemagick and RMagick wrapper for  for manipulating images.Webomagick provides basic functionalities related to images:
+Webomagick is a gem used for image processing. Webomagick uses Imagemagick and RMagick wrapper for  for manipulating images. Webomagick provides basic functionalities related to images:
 * Thumbnail
 * Resolution
 * Crop
 * Rotate
 * Scale
 
--------------------------------------
 ### Dependency:
-* [Imagemagick Delegates](http://www.imagemagick.org/download/delegates/)
-* [Imagemagick Library](http://www.imagemagick.org/script/install-source.php)
-* [RMagick Gem](https://github.com/rmagick/rmagick)
+* Install following delegates from below link:
+ (http://www.imagemagick.org/download/delegates/jpegsr9a.zip)
+ (http://www.imagemagick.org/download/delegates/libpng-1.6.16.tar.gz)
+* Download Imagemagick Library:[Imagemagick Library](http://www.imagemagick.org/script/install-source.php)
+* RMagick Gem: [RMagick Gem](https://github.com/rmagick/rmagick)
 
-----------------------------------------------------------------------------
+________________________________________________________________________________
 ### Installation:
 ```shell
 (sudo)gem install webomagick
@@ -34,9 +35,10 @@ Require the gem
 require 'webomagick'
 ```
 ____________________________________________________________________________
+Following are the actions user can perform on image:
 
 #### thumbnail(width : int)
-Resize the image according to  width
+Resize the image according to width.
 
 * Example
 ``` ruby
@@ -44,14 +46,14 @@ Resize the image according to  width
 ```
 
 #### rotate(degrees : int)
-rotate the image according degrees 
+rotate the image according degrees.
 
 * Example:
 ``` ruby
 "actions" => {"rotate"=>50}
 ```
 #### resize_by_resolution(resolution :int)
-Resize the image according to resolution
+Resize the image according to resolution.
 
 * Example
 
@@ -80,7 +82,7 @@ Resize the image according to percentage.
 ``` ruby
 "actions" => {"resize_by_scale"=>1.25}
 ```
-*Example for manipulating an image
+* Example for manipulating an image.
 ____________________________________________________________________________
 ```ruby
 param = {"actions" => "{"thumbnail"=>50}","source_url" => "https://encrypted.google.com/images/srpr/logo11w.png","result" => "/home/deepak/test/test.png"}
